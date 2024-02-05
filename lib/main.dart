@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:myevent/components.dart/navbarr.dart';
+import 'package:myevent/pages/Home.dart';
 import 'package:myevent/pages/Signup.dart';
 import 'package:myevent/pages/login.dart';
 main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
 
-home:regster()   ,
+home:nav()   ,
 
 
     );

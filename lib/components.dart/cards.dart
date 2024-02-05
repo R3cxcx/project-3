@@ -15,8 +15,8 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 280,
-      width: 380,
+height: MediaQuery.of(context).size.height/3,
+width: MediaQuery.of(context).size.width/3,
       child: Card(
         color: Color.fromARGB(78, 205, 176, 252),
         clipBehavior: Clip.antiAlias,
@@ -31,23 +31,23 @@ class MyCard extends StatelessWidget {
                 child: Stack(
                   children: [
                     Container(
-                        width: 400,
-                        height: 220,
+                       height: MediaQuery.of(context).size.height/4,
+                       width: MediaQuery.of(context).size.width/3,
                         child: Image.asset(
                           "${imagepath}",
                           fit: BoxFit.cover,
                         )),
                     Padding(
-                      padding: const EdgeInsets.only(top: 180.0),
+                      padding: const EdgeInsets.only(top: 0.0),
                       child: Container(
-                          width: 400,
-                          height: 30,
-                          color: Color.fromARGB(164, 52, 3, 80),
+                         height: MediaQuery.of(context).size.height/4,
+                          width: MediaQuery.of(context).size.width/6,
+                          color: Color.fromARGB(249, 57, 2, 88),
                           child: Text(
-                            "${cardTitle}",
+                            "${cardTitle}" ,
                             style: TextStyle(
-                                fontSize: 16,
-                                color: Color.fromARGB(255, 89, 165, 228)),
+                                fontSize: 20,
+                                color: Color.fromARGB(0, 55, 127, 185)),
                           )),
                     ),
                   ],
@@ -60,7 +60,7 @@ class MyCard extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(0),
                 child: Row(
                   children: [
                     Image.asset("images/Group.png"),

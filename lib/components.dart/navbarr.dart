@@ -23,7 +23,7 @@ class _navState extends State<nav> {
   int sindex = 0;
   final Screens = [
    Home(),weekly()
-    ,profile(),
+    ,
   MyMap(),
   
   ];
@@ -40,9 +40,9 @@ class _navState extends State<nav> {
             });
           },
           currentIndex: sindex,
-          selectedItemColor: Color.fromARGB(255, 178, 22, 209),
-          backgroundColor: Color.fromARGB(255, 167, 13, 219),
-          unselectedItemColor: Colors.blueGrey,
+          selectedItemColor: Color.fromARGB(0, 47, 22, 209),
+          backgroundColor: Color.fromARGB(0, 168, 13, 219),
+          unselectedItemColor: const Color.fromARGB(0, 96, 125, 139),
           iconSize: 15,
           items: [
             BottomNavigationBarItem(
@@ -51,8 +51,7 @@ class _navState extends State<nav> {
             BottomNavigationBarItem(
                 label: "this week",
                 icon: Image.asset("images/Group (1).png")),
-            BottomNavigationBarItem(
-                label: "schadole", icon: Image.asset("images/user 1 (2).png")),
+            
             BottomNavigationBarItem(
                 label: "MAP", icon: Image.asset("images/Group.png"))
           ]),
